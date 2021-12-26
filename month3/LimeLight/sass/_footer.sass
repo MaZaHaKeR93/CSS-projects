@@ -1,0 +1,58 @@
+.footer
+  padding: 35px 0
+  +md
+    padding: 15px
+  &_container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +font_properties($font_roboto_slab, 14px, 400, 22px, $color_matterhorn)
+    +md
+      display: block
+
+  .menu
+    +md
+      display: block
+      margin-bottom: 10px
+    +sm
+      display: none
+    &_list
+      +md
+        display: flex
+        justify-content: center
+
+    &_item
+      margin-left: 0
+      margin-right: 25px
+      &:last-child
+        margin-right: 0
+      +md
+        margin-right: 15px
+    &_link
+      padding: 0
+.social_networks
+  +md
+    width: 100%
+    margin: 0 auto 10px
+    text-align: center
+  &_item
+    display: inline-block
+    margin-left: 5px
+    text-align: center
+    font-size: 23px
+    color: $color_white
+    line-height: 41px
+    +circle(41px, $color_nero)
+    &:hover, &:active
+      background: $color_lime_green
+
+.copyright
+  letter-spacing: -0.04em
+  +md
+    width: 90%
+    margin: 0 auto
+    text-align: center
+  a
+    &:hover, :active
+      color: $color_lime_green
+

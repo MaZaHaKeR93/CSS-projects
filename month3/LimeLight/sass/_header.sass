@@ -1,0 +1,56 @@
+.header
+  background: $color_white
+  &_container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 32px 0 82px
+    +md
+      display: block
+      text-align: center
+      padding: 10px 0
+.sandwich_label, .sandwich_checkbox
+  display: none
+
+.sandwich_label
+  +md
+    display: block
+    font-size: 30px
+    margin-bottom: 15px
+
+.logo
+  display: inline-block
+  +md
+    display: block
+    width: 171px
+    margin: 0 auto 15px
+  img
+    display: block
+
+.menu
+  margin-right: 5px
+  +md
+    margin-right: 0
+    display: none
+  &_list
+    display: flex
+    justify-content: space-between
+    +md
+      display: block
+  &_item
+    margin-left: 45px
+    +md
+      margin-left: 0
+    &:first-child
+      margin-left: 0
+  &_link
+    color: $color_zambezi
+    +md
+      display: inline-block
+      margin-bottom: 5px
+      padding: 10px 20px
+    &:hover, &:active
+      color: $color_atlantis
+
+.sandwich_checkbox:checked + .menu
+  display: block

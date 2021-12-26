@@ -1,0 +1,119 @@
+.offers
+  padding: 83px 0 0
+  text-align: center
+  +md
+    padding-top: 30px
+  &_container
+    +lg
+      width: 80%
+    +md
+      width: 95%
+  &_title
+    padding-left: 15px
+    text-align: left
+    border-left: 7px solid $color_atlantis
+    +font_properties($font_roboto_slab, 36px, 400, 36px, $color_nero)
+  &_subtitle
+    display: block
+    margin-top: 8px
+    +font_properties($font_open_sans, 16px, 400, normal, $color_charcoal)
+  &_list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 51px 0 0
+    text-align: left
+    +md
+      padding: 20px
+    +sm
+      justify-content: center
+  &_item
+    margin-bottom: 40px
+    +md
+      width: 48%
+      margin-bottom: 44px
+    +sm
+      width: 90%
+
+    &:hover, &:active
+      .offers_item_info
+        transform: translateY(0)
+    &_inner
+      position: relative
+      top: 0
+      left: 0
+      border: 5px solid $color_whisper
+      border-radius: 5px
+      overflow: hidden
+    &_img
+      display: block
+      width: 100%
+    &_info
+      display: flex
+      justify-content: space-between
+      position: absolute
+      left: 0
+      bottom: 0
+      transition: 0.3s
+      width: 100%
+      padding: 0 10px
+      background: rgba(0, 0, 0, 0.75)
+      border-bottom-left-radius: 3px
+      border-bottom-right-radius: 3px
+      transform: translateY(100%)
+      +font_properties($font_open_sans, 12px, 400, 40px, $color_white)
+      &_links
+        a
+          margin-left: 10px
+          &:first-child
+            margin-left: 0
+          &:hover, &:active
+            color: $color_atlantis
+      .fa
+        font-size: 18px
+    &_link
+      display: block
+      position: relative
+      width: 100%
+      padding: 17px 0 0 14px
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 0
+        right: 14px
+        +circle(32px, $color_atlantis url($img_folder_path + 'ic-arrow.png') 50% 50% no-repeat)
+      &:hover::after, &:active::after
+        background-color: $color_lime_green
+
+      &_title
+        text-overflow: ellipsis
+        margin-bottom: 3px
+        width: 185px
+        white-space: nowrap
+        overflow: hidden
+        +font_properties($font_roboto_slab, 16px, 400, 20px, $color_nero)
+      &_categories_list
+        +font_properties($font_open_sans, 14px, 400, 18px, $color_charcoal)
+      &_categories_list
+        +font_properties($font_open_sans, 14px, 400, normal, $color_charcoal)
+
+  &_btn
+    display: inline-block
+    margin-top: 20px
+    padding: 0 31px
+    text-transform: uppercase
+    background: $color_atlantis
+    border: none
+    border-radius: 3px
+    cursor: pointer
+    +font_properties($font_open_sans, 16px, 400, 37px, $color_white)
+    +sm
+      margin-top: 0
+    &:hover, &:active
+      background-color: $color_lime_green
+    &::after
+      content: "\f105"
+      display: inline-block
+      font: normal normal normal 24px/1 FontAwesome
+      margin-left: 10px

@@ -1,0 +1,68 @@
+.promo
+  padding-top: 1px
+  min-height: 483px
+  background: #fff url($img_folder_path + "promo.jpg") 50% 0 no-repeat
+  +md
+    min-height: 300px
+    text-align: center
+  &_wrapper
+    width: 390px
+    margin-top: 70px
+    +md
+      padding-top: 10px
+      padding-bottom: 10px
+      margin: 0 auto
+    +sm
+      width: 100%
+  &_title
+    width: 95%
+    margin-bottom: 18px
+    +font_properties($font_roboto_slab, 36px, 400, 46px, $color_nero)
+    +md
+      font-size: 30px
+      line-height: 40px
+    +sm
+      font-size: 25px
+      line-height: 30px
+  &_text
+    margin-bottom: 34px
+    +font_properties($font_open_sans, 16px, 600, 24px, $color_charcoal)
+    +md
+      text-align: left
+      font-weight: 400
+    +sm
+      font-size: 13px
+      text-align: center
+    &_info
+      margin-bottom: 11px
+      +font_properties($font_open_sans, 16px, 400, 24px, $color_charcoal)
+      +sm
+        font-size: 13px
+.email_field
+  width: 251px
+  height: 37px
+  padding: 0 12px
+  border: 1px solid $color_gainsboro
+  +font_properties($font_open_sans, 16px, 400, 41px, $color_nero)
+  +sm
+    width: 200px
+    font-size: 13px
+
+  +placeholder
+    color: $color_dark_gray
+    +font_properties($font_open_sans, 16px, 400, 41px, $color_dark_gray)
+    +sm
+      font-size: 13px
+.submit_btn
+  padding: 7px 22px 10px
+  cursor: pointer
+  text-transform: uppercase
+  background: $color_lime_green
+  border: none
+  border-radius: 1px
+  +font_properties($font_open_sans, 16px, 400, 20px, $color_white)
+  +sm
+    font-size: 13px
+  &:hover, &:active
+    background: $color_atlantis
+

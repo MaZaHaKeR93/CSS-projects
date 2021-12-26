@@ -1,0 +1,38 @@
+=lg
+  @media screen and (max-width: 1000px)
+    @content
+
+=md
+  @media screen and (max-width: 800px)
+    @content
+
+=sm
+  @media screen and (max-width: 580px)
+    @content
+
+=font_properties($family, $size, $weight, $line-height, $color)
+  font-family: $family
+  font-size: $size
+  font-weight: $weight
+  line-height: $line-height
+  color: $color
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+=circle($size, $bg_color)
+  width: $size
+  height: $size
+  background: $bg_color
+  border-radius: 50%
+
+
+
+

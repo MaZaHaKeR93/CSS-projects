@@ -1,0 +1,40 @@
+.quote
+  margin: 82px 0 83px
+  padding: 34px 0 35px
+  background: $color_white_smoke
+  +md
+    margin: 30px 0
+  &_wrapper
+    width: 100%
+    position: relative
+    top: 0
+    left: 0
+    text-align: center
+  &_text
+    display: inline-block
+    width: 788px
+    letter-spacing: -1px
+    +font_properties($font_open_sans, 28px, 400, 40px, $color_black)
+    +lg
+      width: 85%
+      font-size: 24px
+    +md
+      width: 70%
+      font-size: 20px
+    &::before, &::after
+      display: inline-block
+      position: absolute
+      top: 0
+      width: 47px
+      height: 47px
+      font: normal normal normal 25px/47px FontAwesome
+      text-align: center
+      color: $color_white
+      +circle(47px, $color_atlantis)
+      transform: translateY(50%)
+    &::before
+      content: "\f10d"
+      left: 0
+    &::after
+      content: "\f10e"
+      right: 0
