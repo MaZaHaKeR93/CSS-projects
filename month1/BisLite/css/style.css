@@ -1,0 +1,252 @@
+body {
+  font-family: arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.header {
+  background: #e8ebf1;
+  padding: 36px 0 46px 0;
+  box-shadow: 0 1px 0 #6ec2ca;
+  margin-bottom: 1px;
+}
+.logo {
+  float: left;
+  margin-right: 212px;
+}
+.logo img {
+  display: block;
+}
+.menu {
+  padding-top: 17px;
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+}
+.menu_list {
+  list-style: none;
+}
+.menu_item {
+  text-transform: uppercase;
+  float: left;
+  margin-right: 50px;
+}
+.menu_item:last-child {
+  margin-right: 0;
+}
+.menu_item_link {
+  color: #000;
+}
+.menu_item_link:hover {
+  color: #2aacc8;
+}
+.menu_item_link:active {
+  color: #900060;
+}
+.promo {
+  background: #81e4ed;
+  padding: 20px 0 40px 0;
+}
+.promo img {
+  width: 100%;
+  display: block;
+}
+.promo_inner {
+  position: relative;
+}
+.promo_text {
+  position: absolute;
+  top: 93px;
+  left: 61px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: normal;
+  width: 35%;
+}
+.advantages_list {
+  background: #e8ebf1;
+  padding: 56px 0px 47px 0;
+  box-shadow: 0 1px 0 #d9d9d9;
+  margin-bottom: 1px;
+}
+.advantage_item {
+  float: left;
+  width: 22%;
+  margin-right: 40px;
+}
+.advantage_item:last-child {
+  margin-right: 0;
+}
+.advantage_title_link {
+  display: block;
+}
+.advandage_title {
+  margin-top: 12px;
+  float: left;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+}
+.icon {
+  float: left;
+  padding: 20px;
+  border-radius: 50%;
+  margin: 4px 20px 15px 0;
+}
+.pen {
+  background: #2aacc8 url(../img/ic-pen.png) 50% 50% no-repeat;
+}
+.frame {
+  background: #2aacc8 url(../img/ic-frame.png) 49% 49% no-repeat;
+}
+.sandwich {
+  background: #2aacc8 url(../img/ic-sandwich.png) 50% 50% no-repeat;
+}
+.airplane {
+  background: #2aacc8 url(../img/ic-airplane.png) 69% 56% no-repeat;
+}
+.advantage_text {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #363636;
+  margin-bottom: 20px;
+}
+.advantage_text:last-child {
+  padding-left: 3px;
+}
+.advantage_link {
+  font-size: 13px;
+  font-weight: normal;
+  color: #2aacc8;
+  text-transform: capitalize;
+}
+.arrow {
+  font-weight: bold;
+  font-size: 10px;
+  color: #000;
+  margin-right: 9px;
+}
+.works {
+  padding-top: 10px;
+  text-align: center;
+}
+.works_title {
+  text-align: left;
+  background: url(../img/ic-cursor.png) 1px 9px no-repeat;
+  padding: 15px 0 16px 39px;
+  margin: 0px 0px 10px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #dfe1e5;
+}
+.works_item_link img {
+  display: block;
+  width: 100%;
+}
+.works_item_link {
+  float: left;
+  width: 22%;
+  margin: 10px 40px 0 0;
+}
+.works_item_link:last-child {
+  margin-right: 0;
+}
+.download_button {
+  box-shadow: 0 0 1px #000;  
+  display: inline-block;
+  margin: 33px 0px 0px 13px;
+  padding: 19px 19px 18px 69px;
+  background: #2aacc8 url(../img/ic-download.png) 17px 14px no-repeat;
+  border-radius: 7px;
+  border: 1px solid #2aacc8;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.testimonials_title {
+  background: url(../img/ic-comment.png) 1px 21px no-repeat;
+  width: 100%;
+  padding: 25px 0 10px 40px;
+  margin: 21px 0 3px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  border-top: 1px solid #dfe1e5;
+}
+.testimonial_text {
+  width: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #363636;
+  margin-bottom: 27px;
+  padding: 0 5px 0 0;
+}
+.testimonial_author {
+  font-size: 14px;
+  display: inline-block;
+  font-weight: bold;
+  font-style: italic;
+  color: #363636;
+  margin-bottom: 29px;
+}
+.footer {
+  box-shadow: 0 -1px 0 #d9d9d9;
+  color: #363636;
+  background: #e8ebf1;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 29px 0px 28px 1px;
+}
+.footer span {
+  margin-top: 3px;
+  display: block;
+}
+.download_button {
+  display: inline-block;
+  border: 1px solid #2aacc8;
+  background: #94f7ff;
+  background: -moz-linear-gradient(top,  #94f7ff 0%, #7db9e8 33%);
+  background: -webkit-linear-gradient(top,  #94f7ff 0%,#7db9e8 33%);
+  background: linear-gradient(to bottom,  #94f7ff 0%,#7db9e8 33%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94f7ff', endColorstr='#7db9e8',GradientType=0 );
+  border-radius: 6px;
+  margin: 33px 0px 0px 13px;
+  padding: 17px 27px 15px 3px;
+}
+.button_background {
+  display: block;
+  background: url(../img/ic-download.png) 16px -3px no-repeat;
+  float: left;
+  width: 28px;
+  height: 26px;
+  padding-right: 57px;
+}
+.button_text {
+  float: left;
+  padding-top: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
